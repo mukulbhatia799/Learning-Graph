@@ -4,7 +4,6 @@
 using namespace std;
 
 void DFS(map<int, vector<int> > &mp, vector<int> &visited, int node) {
-    if(mp.find(node) == mp.end()) return;
     cout << node << " ";
     for(int val: mp[node]) {
         if(visited[val] != 1) {
